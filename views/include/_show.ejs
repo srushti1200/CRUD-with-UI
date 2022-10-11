@@ -1,0 +1,13 @@
+<% for(var i=0; i< students.length ; i++) { %>
+    <tr>
+        <td><%= students[i]._id %></td>
+        <td><%= students[i].name %></td>
+        <td><%= students[i].dept %></td>
+        
+        
+      <td>  <a class="btn btn-primary" href="update">Update</a></td>
+      <!-- <td>  <a class="btn btn-primary delete" data_name=<%=students[i].name %>  href="/">Delete</a></td> -->
+      <td>  <a class="btn btn-primary delete" data_id=<%=students[i]._id %>  href="/">Delete</a></td>
+    </tr>
+
+<% } %>
